@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "enter the number"
+read num
+count=0
+digit=0
+while [ $num -gt 0 ]
+do
+digit=$((num%10))
+count=$((count+1))
+num=$((num/10))
+done
+echo "$count"
+
+
